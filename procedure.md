@@ -47,7 +47,7 @@ any command and press **Enter**.
 In a second terminal, enter the **same** container the tool is using:
 
 ```bash
-docker compose exec mcp bash
+docker compose -p cyberlab-trojan-horse-mcp up
 ```
 
 Now compare what each side sees.
