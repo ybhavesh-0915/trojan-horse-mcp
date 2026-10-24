@@ -23,7 +23,7 @@ Nothing on the host is mounted, so the demonstration can be shown safely.
 
 ## Architecture
 
-![Architecture](images/architecture.svg)
+![Architecture](https://raw.githubusercontent.com/ybhavesh-0915/trojan-horse-mcp/refs/heads/main/images/architecture.svg)
 
 The browser talks to `server.js` over loopback. `server.js` spawns `bash` **inside the
 container**, so every command reads and writes the container filesystem only.
