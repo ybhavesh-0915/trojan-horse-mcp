@@ -1,7 +1,3 @@
-# References
-
-## Protocol
-
 1. **Model Context Protocol — Specification (2025-06-18)**
    <https://modelcontextprotocol.io/specification/2025-06-18>
    Normative reference for the lifecycle, tools and transports used here.
@@ -62,13 +58,3 @@
 14. **MITRE ATT&CK — T1195: Supply Chain Compromise**
     <https://attack.mitre.org/techniques/T1195/>
     Background on why installing a server is a trust decision.
-
-## This project
-
-- Repository: <https://github.com/ybhavesh-0915/trojan-horse-mcp>
-- Architecture diagram: [images/architecture.svg](images/architecture.svg)
-- Screenshot: [images/ui.png](images/ui.png)
-
----
-
-Previous: [Procedure](procedure.md) · Back to [Aim](aim.md)
