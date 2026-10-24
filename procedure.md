@@ -33,7 +33,7 @@ The port is published as `127.0.0.1:7331` — reachable from this machine only.
 
 Go to **<http://localhost:7331>**.
 
-![Browser UI](images/ui.png)
+![Browser UI](https://raw.githubusercontent.com/ybhavesh-0915/trojan-horse-mcp/refs/heads/main/images/ui.png)
 
 The page connects to `/mcp`, calls `initialize`, then `tools/list`, and runs `ls -1 /`
 through `run_command`. The header confirms the connection:
