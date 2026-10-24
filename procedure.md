@@ -1,5 +1,3 @@
-# Procedure
-
 ## Requirements
 
 | Tool | Version used | Check |
@@ -111,7 +109,3 @@ gone with it, which is the point of the demonstration.
 | Tool output vs `docker exec` output | identical |
 | Host files visible inside the container | none |
 | Commands surviving `docker compose down` | none |
-
----
-
-Previous: [Objective](objective.md) · Next: [References](reference.md)
