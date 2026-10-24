@@ -1,11 +1,7 @@
-# Aim
-
 To design and implement a **Model Context Protocol (MCP) server** that gives an AI
 client the ability to execute shell commands, and to **contain that execution inside
 a disposable Docker container** so that the commands can be verified from outside
 while the host filesystem remains unreachable.
-
-## Assignment context
 
 An MCP server is a realistic *trojan-horse* vector: it is installed like any other
 developer tool, it runs with the user's privileges, and once connected it can expose
@@ -31,7 +27,3 @@ Nothing on the host is mounted, so the demonstration can be shown safely.
 
 The browser talks to `server.js` over loopback. `server.js` spawns `bash` **inside the
 container**, so every command reads and writes the container filesystem only.
-
----
-
-Next: [Theory](theory.md) · [Objective](objective.md) · [Procedure](procedure.md) · [References](reference.md)
