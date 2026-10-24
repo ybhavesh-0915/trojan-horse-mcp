@@ -1,5 +1,3 @@
-# Objectives
-
 1. **Implement an MCP server from scratch** — JSON-RPC 2.0 over stdio, without using
    the official SDK, to show that the protocol is small enough to read in one file.
 
@@ -33,7 +31,3 @@
 | 5 | `docker compose up` → `http://localhost:7331` responds `200` |
 | 6 | tool output and `docker exec` output are byte-identical |
 | 7 | all five documents render on GitHub with images |
-
----
-
-Previous: [Theory](theory.md) · Next: [Procedure](procedure.md)
