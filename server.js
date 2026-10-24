@@ -325,7 +325,9 @@ const PAGE = `<!doctype html>
       run(b.dataset.cmd);
     });
   });
-  init();
+  init().then(function () {
+    run(document.getElementById('cmd').value);
+  });
 </script>
 </body>
 </html>`;
