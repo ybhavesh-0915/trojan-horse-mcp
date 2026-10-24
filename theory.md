@@ -1,5 +1,3 @@
-# Theory
-
 ## 1. Model Context Protocol (MCP)
 
 MCP is an open protocol that standardises how an AI application (**host**) talks to
@@ -87,7 +85,3 @@ Consequences used in this project:
   network.
 - The HTTP endpoint has **no authentication**. It is bound to `127.0.0.1` and intended
   for a local demo only.
-
----
-
-Next: [Objective](objective.md) · [Procedure](procedure.md) · [References](reference.md)
