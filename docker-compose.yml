@@ -1,0 +1,29 @@
+# docker compose up
+#   → http://localhost:7331 pe UI khul jaayega (MCP bhi wahin /mcp pe hai)
+#   → dusre tab me: docker compose exec mcp bash
+#
+# docker compose down  → band
+
+services:
+  mcp:
+    build: .
+    image: mcp-cmd-ubuntu
+    init: true
+    stdin_open: true
+    tty: false
+    environment:
+      MCP_TRANSPORT: http
+      MCP_HOST: 0.0.0.0
+      MCP_PORT: "7331"
+    ports:
+      - "127.0.0.1:7331:7331"
+    healthcheck:
+      test:
+        - CMD
+        - node
+        - -e
+        - fetch('http://127.0.0.1:7331/healthz').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))
+      interval: 5s
+      timeout: 3s
+      retries: 5
+      start_period: 3s
